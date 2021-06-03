@@ -10,7 +10,7 @@ const Trip = ({ title, image, type, difficulty, about, id }) => {
 
   return (
     <li className={styles.trip}>
-      <Image src={'/' + image} alt={title} width={500} height={400} />
+      <Image src={`/${image}`} alt={title} width={500} height={400} />
       <div className={styles.content}>
         <div className={styles.summary}>
           <h2>{title}</h2>
