@@ -1,9 +1,10 @@
 import Menu from '../../components/Menu';
 import TripList from '../../components/TripList';
-import { trips } from '../../data/trips';
+import { getAllTrips } from '../../data/trips';
 import styles from '../../styles/Home.module.css';
 
-const TripPage = () => {
+const TripsPage = ({trips}) => {
+
   return (
     <div className={styles.container}>
       <Menu />
@@ -12,4 +13,12 @@ const TripPage = () => {
   );
 };
 
-export default TripPage;
+export default TripsPage;
+
+export const getStaticProps = () => {
+  return {
+    props: {
+      trips: getAllTrips(),
+    },
+  };
+};

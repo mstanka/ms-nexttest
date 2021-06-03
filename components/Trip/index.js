@@ -6,7 +6,7 @@ import ArrowRightIcon from '../icons/ArrowRightIcon';
 import styles from './trip.module.css';
 
 const Trip = ({ title, image, type, difficulty, about, id }) => {
-  const exploreMoreLink = `/trips/${id}`;
+  const exploreMoreLink = `/vylety/${id}`;
 
   return (
     <li className={styles.trip}>

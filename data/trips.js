@@ -1,4 +1,4 @@
-export const trips = [
+export const TRIPS = [
   {
     id: 't1',
     title: 'Menas trip',
@@ -36,3 +36,7 @@ export const trips = [
     isFeatured: false,
   },
 ];
+
+export const getAllTrips = () => {
+  return TRIPS;
+};
