@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Button from '../ui/button';
-import TagIcon from '../icons/tag-icon';
-import AboutIcon from '../icons/about-icon';
-import ArrowRightIcon from '../icons/arrow-right-icon';
+import TagIcon from '../icons/TagIcon';
+import AboutIcon from '../icons/AboutIcon';
+import ArrowRightIcon from '../icons/ArrowRightIcon';
 import styles from './trip.module.css';
 
 const Trip = ({ title, image, type, difficulty, about, id }) => {
