@@ -11,7 +11,7 @@ const Trip = ({ title, image, type, difficulty, about, id }) => {
   return (
     <li className={styles.trip}>
       <Image
-        src={`/${image}`}
+        src={`/images/${id}.jpg`}
         alt={title}
         width={500}
         height={400}
